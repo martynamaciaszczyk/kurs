@@ -12,15 +12,15 @@
           var wynik = a +b;
           //alert(a+b);
           console.log("test");
-          console.log(typeof(a)) //number
+          console.log(typeof(a)); //number
 
            //alert(a+b);
           console.log("test");
-          console.log(typeof(b)) //string
+          console.log(typeof(b)); //string
 
            //alert(a+b);
           console.log("test");
-          console.log(typeof(wynik)) //string
+          console.log(typeof(wynik)); //string
 
           console.trace();
 
@@ -36,14 +36,33 @@
           var prawda = true;
           console.log(typeof(prawda));
 
+          var inna;
+          console.log(typeof(inna));
 
+         /* var tab= ["jeden","dwa"];
+          console.log(tab);
+          console.log(typeof(tab)); //object*/
+
+         /* var liczba = prompt("Podaj liczbę", "np.3");
+          console.log(typeof(liczba)); //string
+          liczba = parseInt(liczba);
+          console.log(typeof(liczba)); //number
+          document.write("Wprowadziłeś wartość: " + liczba);*/
+
+
+          var wysokosc = prompt("Podaj wysokość prostokąta");
+          wysokosc = parseInt(wysokosc);
+          document.write("Wysokość: " + wysokosc +"<br>");
+
+          var szerokosc = prompt("Podaj szerokość prostokąta");
+          szerokosc = parseInt(szerokosc);
+          document.write("Szerokość: " + szerokosc);
+
+          var pole = wysokosc * szerokosc;
+          document.write("<br>Pole: "+ pole);
 
 
         </script>
-
-
-
-
 
     </body>
 </html>
