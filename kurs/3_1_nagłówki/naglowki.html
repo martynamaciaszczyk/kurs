@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nagłówek</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styl.css">
+
+</head>
+
+<body>
+<h1>Nasza oferta</h1>
+    <div id = "wynik"></div>
+    <div id = "a"></div>
+    <div id = "b"></div>
+    <div id = "c"></div>
+<script>
+    document.write("<h2>Witaj Janusz</h2>");
+    //document - obiekt
+    //. - operator elementu składowego
+    //write("<h2>Witaj Janusz</h2>") - metoda
+    //"<h2>Witaj Janusz</h2>" - parametr
+</script>
+
+<script>
+
+   /* var dziesietna = 15; //liczba w systemie dziesiętnym
+    var oktalna = 017; //licbza w systemie oktalnym
+    var hex = 0xA2;*/ //zapis liczby heksadecymalnej
+    /*document.write(oktalna);
+    document.write(hex + "<br>");*/
+
+
+    //Zad. 1 Użytkownik podaje liczbę szestnastkowa z klawiatury. Zamień ją i wyświetl jako liczbe w systemie dziesiętnym.
+
+   /* var liczba = prompt("Podaj liczbę w systemie szesnastkowym");
+    document.write("Liczba w systemie szesnastkowym: " + liczba);
+    var x = "0x" + liczba;
+    console.log(typeof(x));
+    x = parseInt(x); //wskazanie, że x jest liczbą
+    console.log(typeof(x));
+    document.write("<br>W systemie dziesiętnym wynosi: " + x + "<br>");
+    document.write("("+ liczba + ")" + "<sub>16</sub> = (" + x + ")<sub>10</sub>"+ "<br>")*/;
+
+    //Zad. 2 Wyświetlić funkcję y = x2 - 4ac
+
+    /*document.write("y = x<sup>2</sup> - 4ac" + "<br>")*/;
+
+    //Zad. 3 Użytkownik podaje z klawiatury podstawę i wysokość trójkąta. Oblicz i wyświetl ile wynosi pole.
+
+   /* var blok = document.getElementById("wynik");
+    blok.style.color = "green";
+    var podstawa = prompt("Podaj długość podstawy trójkąta");
+    document.write("Długość podstawy: " + podstawa + "<br>");
+    var wysokosc = prompt("Podaj wysokość trójkąta");
+    document.write("Wysokość trójkąta: " + wysokosc + "<br>");
+    var pole = 0.5 * podstawa * wysokosc;
+    document.write("Pole trójkąta wynosi: " + pole + "cm<sup>2</sup>" + "<br>");
+    blok.innerHTML = "Pole trójkąta wynosi: " + pole + "cm<sup>2</sup>";*/ //sposób zblok content nie odczytuje znaczników html
+
+
+    /*//Zad. 4 Użytkownik podaje z klawiatury swój wiek (Janusz)
+    Użytkownik podaje z klawiatury swój wiek (Agata). Oblicz średni wiek. Wyświetl wynik w formacie: "Średni wiek wynosi :" <wiek> "lat". W nawiasach kwadratowych jest wynik działania. Średni wiek wyświetl w kolorze czerwonym, a pozostałe dane w kolorze #FF07D2*/
+
+
+    /*var wiekAgata = prompt ("Agata, podaj swój wiek");
+    wiekAgata = parseFloat(wiekAgata);
+    var wiekJanusz = prompt ("Janusz, podaj swój wiek");
+    wiekJanusz = parseFloat(wiekJanusz);
+    var wiekSredni = (wiekAgata + wiekJanusz)/2;
+    document.write("Średni wiek wynosi: ");
+    document.write("[" + wiekSredni + "]");
+    document.write(" lat");
+    a = document.getElementById("a");
+    a.innerHTML = "Średni wiek wynosi: "
+    a.style.color = "#FF07D2";
+    b = document.getElementById("b");
+    b.innerHTML = wiekSredni;
+    b.style.color = "red";
+    c = document.getElementById("c");
+    c.innerHTML = " lat";
+    c.style.color = "#FF07D2";
+
+
+    var x = prompt("Podaj x");
+    var y = prompt("Podaj y");
+    var z = x + y; // bez parse znak sumy łączy teksty a nie sumuje wartości
+    console.log(z);
+
+    x = parseFloat(x);
+    y = parseFloat(y);
+    z = x + y;
+    console.log(z); */
+
+    var tekst = parseFloat(prompt("Podaj wiek"));
+    document.write(tekst);
+    // po podaniu wartości Janusz wyświetla się NaN - Not a Number
+
+    if(!isNaN(tekst)){
+        document.write("Podałeś błędne dane.");
+    }else{
+        document.write("Twój wiek: " + wiek );
+    }
+
+</script>
+
+</body>
+
+
+
+</html>
