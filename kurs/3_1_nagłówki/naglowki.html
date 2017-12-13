@@ -14,6 +14,9 @@
     <div id = "a"></div>
     <div id = "b"></div>
     <div id = "c"></div>
+
+    <div id = "tekst"></div>
+    <div id = "wynik"></div>
 <script>
     document.write("<h2>Witaj Janusz</h2>");
     //document - obiekt
@@ -92,7 +95,7 @@
     z = x + y;
     console.log(z); */
 
-    var tekst = parseFloat(prompt("Podaj wiek"));
+   /* var tekst = parseFloat(prompt("Podaj wiek"));
     document.write(tekst);
     // po podaniu wartości Janusz wyświetla się NaN - Not a Number
 
@@ -100,6 +103,88 @@
         document.write("Podałeś błędne dane.");
     }else{
         document.write("Twój wiek: " + wiek );
+    }
+*/
+
+
+    //Zadanie domowe nr 1 - informacja, czy użytkownik jest pełnoletni
+
+//    var wiek = prompt("Podaj swój wiek");
+//    wiek = parseInt(wiek);
+//
+//    if (wiek < 18) {
+//    document.write("Użytkownik nie jest pełnoletni");
+//    }else{
+//    document.write("Użytkownik jest pełnoletni");
+//    }
+
+    //Zadanie domowe nr 2 - obliczanie obwodu i pola koła na podstawie promienia
+
+   /* var r = prompt("Podaj promień koła (cm):");
+    r = parseFloat(r);
+    var obwod = 2 * Math.PI * r;
+    var obwod = Math.round(obwod *100 )/100;
+    document.write("Obwód koła wynosi: " + obwod + " cm<br>");
+
+
+    var pole = Math.PI * r * r;
+    var pole = Math.round(pole *100 )/100;
+    document.write("Pole koła wynosi: " + pole + " cm<sup>2</sup>");*/
+
+
+    //Zadanie domowe nr 3
+
+    var x = prompt("Podaj wartość x");
+    var y = prompt("Podaj wartość y");
+    var dzialanie = prompt("Wpisz znak działania *, /, + lub -");
+    x = parseFloat(x);
+    y = parseFloat(y);
+
+
+
+    if (dzialanie == "*") {
+        var wynik = x * y;
+        document.write("Wynik mnożenia wynosi: " + wynik);
+       /* tekst = document.getElementById("tekst");
+        tekst.innerHTML= "Wynik mnożenia wynosi";
+        tekst.style.color = "blue";*/
+
+        }
+    else if (dzialanie == "/") {
+        var wynik = x / y;
+        document.write("Wynik dzielenia wynosi: " + wynik);
+       /* tekst = document.getElementById("tekst");
+        tekst.innerHTML= "Wynik dzielenia wynosi";
+        tekst.style.color = "blue";*/
+        /*wynik = document.getElementById("wynik");
+        wynik.innerHTML= wynik;
+        wynik.style.color = "red";*/
+        }
+    else if (dzialanie == "+"){
+        var wynik = x + y;
+        document.write("Wynik dodawania wynosi: " + wynik);
+        /*tekst = document.getElementById("tekst");
+        tekst.innerHTML= "Wynik dodawania wynosi";
+        tekst.style.color = "blue";*/
+       /* wynik = document.getElementById("wynik");
+        wynik.innerHTML= wynik;
+        wynik.style.color = "red";*/
+        }
+
+    else if (dzialanie == "-") {
+        var wynik = x - y;
+        document.write("Wynik odejmowania wynosi: " + wynik);
+      /*  tekst = document.getElementById("tekst");
+        tekst.innerHTML= "Wynik odejmowania wynosi";
+        tekst.style.color = "blue";*/
+     /*   wynik = document.getElementById("wynik");
+        wynik.innerHTML= wynik;
+        wynik.style.color = "red";*/
+        }
+
+    else {
+        document.write("Podałeś nieprawidłowe działanie.");
+
     }
 
 </script>
