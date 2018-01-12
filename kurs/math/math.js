@@ -72,3 +72,25 @@ console.log(losuj);
 //wylosuj liczby z przedziału od 15 - 25
 var losuj = Math.floor(Math.random() * 10 + 15);
 console.log(losuj);
+
+//################################################################
+
+var elPi = document.getElementById('pi');
+var elNic = document.getElementById('nic');
+var elPrzycisk = document.getElementById('przycisk');
+var elWynik = document.getElementById('wynik');
+
+elPrzycisk.onclick = function() {
+   if(elPi.checked) {
+       elWynik.innerHTML = Math.PI;
+   }
+    else if(elNic.checked) {
+        elWynik.innerHTML = "Wybrałeś nic";
+
+    }
+
+    else {
+        elWynik.innerHTML = "Wybierz jedno pole";
+    }
+}
+
