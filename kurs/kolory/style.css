@@ -1,0 +1,16 @@
+body {
+    background-color: slategrey;
+    width: 100%;
+}
+#kolor {
+   width: 20%;
+    float: left;
+    text-align: right;
+
+}
+
+#wynikKolor {
+    width: 20%;
+    float: left;
+    text-align: left;
+}

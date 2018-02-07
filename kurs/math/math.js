@@ -65,13 +65,13 @@ var losuj = Math.floor(Math.random() * 11);
 console.log(losuj);
 
 //losowanie z przedziału 10 - 100
-var losuj = Math.floor(Math.random() * 91 + 10); //pomnożenie przez liczbę pomniejszoną o liczbę początkową przedziału i dodanie do niej tej liczby
-console.log(losuj);
+var losuj1 = Math.floor(Math.random() * 91 + 10); //pomnożenie przez liczbę pomniejszoną o liczbę początkową przedziału i dodanie do niej tej liczby
+console.log(losuj1);
 
 //zad. domowe
 //wylosuj liczby z przedziału od 15 - 25
-var losuj = Math.floor(Math.random() * 10 + 15);
-console.log(losuj);
+var losuj2 = Math.floor(Math.random() * 11 + 15);
+console.log("Zadanie domowe: " + losuj2);
 
 //################################################################
 
@@ -92,5 +92,5 @@ elPrzycisk.onclick = function() {
     else {
         elWynik.innerHTML = "Wybierz jedno pole";
     }
-}
+} //nie robi się tak żeby dawać dużo ifów bo to wstyd
 
