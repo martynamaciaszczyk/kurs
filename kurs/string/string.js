@@ -43,6 +43,9 @@ var poprawneNazwisko;
 function wycinanie(){
     minimum = elSuwak.value;
     elKomunikat2.innerHTML = minimum;
+    nazwisko = elNazwisko.value;
+    nazwisko = nazwisko.substr(minimum+1, nazwisko.length-1);
+    elKomunikat2.innerHTML = nazwisko;
 
 }
 
