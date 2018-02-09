@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kalkulator</title>
+    <link rel="Stylesheet" href="style.css">
+
+
+</head>
+<body>
+<div id="komunikat"></div>
+    <form>
+        <input type="password" id="pass1">Hasło 1<br>
+        <input type="password" id="pass2">Hasło 2<br>
+
+
+    </form>
+    <button id="przycisk">Zatwierdź</button>
+    <script>
+        function sprawdzHaslo(){
+            var haslo1 = document.getElementById("pass1");
+            var haslo2 = document.getElementById("pass2");
+            var komunikat=document.getElementById("komunikat");
+            if(pass1.value!=pass2.value){
+                komunikat.innerHTML="Hasła są różne!";
+
+            }else{
+                komunikat.innerHTML="Hasła są poprawne!";
+
+            }
+        }
+
+       var przycisk = document.getElementById("przycisk");
+       przycisk.addEventListener("click",sprawdzHaslo);
+
+        var proby = document.getElementById("proby");
+        var licznik = 2;
+        do{
+            proby.innerHTML = "Masz " + licznik + " próby";
+            licznik--;
+
+        }while(licznik>0)
+
+    </script>
+
+<!--Zad.dom. Użytkownik ma 3 próby na odgadnięcie hasła. Po trzeciej próbie nieudanej blokowane są pola do wpisywania haseł oraz wyświetlany jest komunikat o trzech nieudanych próbach. -->
+
+</body>
+</html>
