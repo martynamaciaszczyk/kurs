@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Potęgowanie</title>
+    <link rel="Stylesheet" href="style.css">
+    
+</head>
+    
+<body>
+    <div id="baner">
+        <a href="index.html"><img src="baner.jpg"></a>
+
+    </div>
+    <div id="menu">
+          Menu <br>
+        <ul>
+            <li><a href="strona1.html">Proste działania</a></li>
+            <li><a href="strona2.html">Potęgowanie</a></li>
+        </ul>
+    
+    </div>
+    <div id="trescStrony">
+        <h1>POTĘGOWANIE</h1>
+        <form>
+            Podaj podstawę potęgi: 
+            <input type="number" id="podstawa"><br><br>
+            Podaj dodatni, całkowity wykładnik potęgi: 
+            <input type="number" id="wykladnik"><br><br>
+        </form>
+        
+            <button id="potegowanie">POTĘGOWANIE</button>
+            <div id="wynik"></div>
+        
+        <script>
+            var elPodstawa = document.getElementById("podstawa");
+            var elWykladnik = document.getElementById("wykladnik");
+            var elPotegowanie = document.getElementById("potegowanie");
+            var elWynik = document.getElementById("wynik")
+            var wartosc1;
+            var wartosc2;
+            var dlugosc1;
+            var dlugosc2; 
+            var potegowanie;
+            
+            elPotegowanie.onclick= function() {
+                
+                wartosc1 = elPodstawa.value;
+                wartosc1 = parseInt(wartosc1);
+                dlugosc1 = wartosc1.length;
+                wartosc2 = elWykladnik.value;
+                wartosc2 = parseInt(wartosc2);
+                dlugosc2 = wartosc2.length;
+                
+                if(dlugosc1 == 0 || dlugosc2 == 0) {
+                
+                    elWynik.innerHTML= "Wpisz podstawę i wykładnik potęgi.";
+                    
+                }else if (wartosc2 < 0){
+                
+                    elWynik.innerHTML = "Wykładnik potęgi musi być dodatni."
+                    
+                }else{
+                    
+                    potegowanie = Math.pow(wartosc1, wartosc2);
+                    elWynik.innerHTML = "Wynik działania wynosi: " + potegowanie; 
+                }
+                }
+            
+                
+                
+            
+            
+        
+        </script>
+        
+    </div>
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+</html>
