@@ -1,0 +1,10 @@
+body {
+    background-color: azure;
+
+}
+#kwadrat {
+    list-style: square;
+}
+#pilka {
+    list-style-image: url("IMG/pilka1.png");
+}
