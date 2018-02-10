@@ -180,6 +180,12 @@ function dodajUzytkownika() {
     daneU[daneU.length] = [elImie.value, elNazwisko.value, elMiasto.value];
     console.log(daneU);
     console.log(daneU.length);
+    elImie.value = "";
+    elNazwisko.value = "";
+    elMiasto.value = "";
+    elImie.focus();
+
+
 
 }
 
