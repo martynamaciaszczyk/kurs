@@ -1,0 +1,25 @@
+.poprawne {
+    width: 150px;
+    color: darkblue;
+    font-size: 18px;
+    font-style: Arial bold; 
+    border: 2px solid green; 
+    border-radius: 5px; 
+    margin: 10px 10px 10px 10px; 
+    background-color: greenyellow;
+    text-align: center;
+    
+}
+
+.niepoprawne {
+    width: 150px;
+    color: white;
+    font-size: 18px;
+    font-style: Arial bold; 
+    border: 2px solid red; 
+    border-radius: 5px; 
+    margin: 10px 10px 10px 10px; 
+    background-color: #a22d2d;
+    text-align: center;
+    
+}
