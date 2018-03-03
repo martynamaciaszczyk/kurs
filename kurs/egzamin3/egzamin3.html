@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal ogłoszeniowy</title>
+    <link rel="Stylesheet" href="1.css">
+</head>
+<body>
+
+<div id='header'>
+      <h1>Portal ogłoszeniowy</h1>
+</div>
+<div id='nav'>
+      <div class="logo">PLACEHOLDER</div>
+      <div class="adres">
+          <h3>Adres</h3>
+          <p>ul. Morska 45 Gdynia</p>
+      </div>
+      <div class="telefon">
+          <h3>Telefon</h3>
+          <p>601601601</p>
+     </div>
+      <div class="e-mail">
+            <h3>e-mail</h3>
+            <p>ogloszenia@poczta.pl</p>
+    </div>
+    </div>
+
+<div id='content'>
+   <div id="lewy">
+    <h1>Ceny ogłoszeń</h1></br>
+        <table id = "tabela">
+           <tr>
+                <th>Liczba ogłoszeń</th>
+                <th>Cena ogłoszenia</th>
+                <th>Bonus</th>
+            </tr>
+            <tr>
+                <td>1 - 50</td>
+                <td>2 PLN</td>
+                <td rowspan="2">Subskrypcja newslettera to upust 0,20 PLN na ogłoszenie</td>
+            </tr>
+            <tr>
+                <td>51 i więcej</td>
+                <td>1 PLN</td>
+            </tr>
+        </table>
+    </div>
+   <div id="srodek"><img id="zdjecie" src="skoczek.jpg"></div>
+</div>
+<div>
+       <div id="prawy">
+       <h2>Ile kosztuje ogłoszenie?</h2>
+        Podaj liczbę ogłoszeń:<br>
+        <input type="number" id="liczba"><br>
+        <input type="checkbox" id="upust">
+        Policz upust na newsletter<br><br>
+        <button id="przycisk">Oblicz</button>
+        <div id="koszt"></div>
+       </div>
+</div>
+
+<footer>
+   <div id="stopka">
+       Portal ogłoszeniowy opracował: 93091905749
+   </div>
+</footer>
+
+    <script>
+        var elPrzycisk = document.getElementById('przycisk');
+        var elLiczba = document.getElementById('liczba');
+        var elUpust = document.getElementById('upust');
+
+        function oblicz(){
+            var liczba = elLiczba.value;
+            var cena;
+            if (liczba>=1 && liczba<=50){
+               if(elUpust.checked){
+                   cena = 1.8*liczba;
+               }else{
+                cena = 2*liczba;
+               }
+            }else if(liczba>=51){
+                if(elUpust.checked){
+                cena = 0.8*liczba;
+            }else{
+                 cena = 1*liczba;
+            }
+            }
+            cena = cena.Math.toFixed(2);
+            koszt.innerHTML = "Koszt ogłoszeń: " +cena+" PLN";
+        }
+        elPrzycisk.addEventListener('click',oblicz);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+width: 100%;
+background-color: #e8dede;
+}
+
+#baner{
+background-color: #009999;
+color: white;
+height: 80px;
+text-align: center;
+}
+.logo, .adres, .telefon, .e-mail{
+width: 20%;
+height: 80px;
+position: relative;
+float: center;
+background-color: #009999;
+color: white;
+font-family: Arial;
+
+
+}
+#lewy, #prawy{
+    width: 30%;
+    float: left;
+}
+
+#srodek {
+    width: 40%;
+    float: left;
+}
+
+#tabela, td, th {
+    border: solid 1px green;
+    text-align: center;
+
+}
+
+#przycisk {
+    border-style: none;
+    background-color: green;
+    color: white;
+    margin: 10px;
+}
+
